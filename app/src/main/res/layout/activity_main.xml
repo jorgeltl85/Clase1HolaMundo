@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/texto1"
+        android:layout_width="167dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="108dp"
+        android:text="@string/saludos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+    <Button
+        android:id="@+id/boton1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clik_superior"
+        android:text="@string/saludo_boton"
+        android:layout_below="@id/texto1"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/boton2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="click_inferior"
+        android:text="@string/saludo_boton"
+        android:layout_below="@id/boton1"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+
+        />
+
+
+
+</RelativeLayout>
